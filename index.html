@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="favicon.ico">
+<title>Ro Dixon Designs: Web Design, Research and Development for small businesses and individuals in need of an amazing website. </title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lobster" rel="stylesheet">
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/f766bd3c92.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<script>
+var winWidth = 0;  /* Window width */
+
+
+ $(document).ready(function() {
+
+
+setContainerDims();
+
+
+function setContainerDims(){
+    winWidth = parseInt($(window).width());
+
+    $("body").css({"width":winWidth});
+}
+
+$(window).resize(function(){
+    setContainerDims();
+})
+
+});
+</script>
+
+<section>
+<div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+    </div>
+    <span id="openbtn" onclick="openNav()"><i class="fa fa-plus"></i></span>
+		<script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+<img id="front-image" src="http://rodixondesigns.com/wp-content/themes/latte_Child/photos/background_photo.png" alt="Background Image"/>
+</section>
+
+<section>
+<img id="rdd-logo" src="http://rodixondesigns.com/wp-content/themes/latte_Child/photos/Large_Logo.png" alt="Site Logo"/> 
+<h2 id="rdd-text"> <strong> Design . Research . Develop </strong> </h2> 
+</section>
+
+<br>
+
+<section id="about-section">
+    <h2 style="text-align: left; color: #45B29D;margin: 10px 5% 5% 5%;"> <u>Who</u> am I? </h2> 
+    <img id="about-photo" src="http://rodixondesigns.com/wp-content/themes/latte_Child/photos/About-photo2.jpg" alt="Ro Dixon"/> 
+    <h3 style="float: left; width: 40%; height: auto;"> I'm Ro Dixon, UX Designer by day and Web developer by night. I've spent the last seven years in UX and I love it, but I found myself tired of turning to a developer every time one of my designs was ready to produce. So I've been learning to code my designs myself, and it's been liberating. Now I really want to share that ability with others. </h3>
+    <button id="about-button"> Learn more </button>
+    
+</section>
+
+
+<section id="services-section"> 
+	<h2 style="color: #cafcd8;"> <u>What</u> can I do?</h2>
+    <table class="services">
+	<tr>
+    	<td class="services td"> <span> Design <br> <i class="fa fa-eye fa-3x" aria-hidden="true"></i> </span> </td>
+        <td class="services td"> <span> Research <br> <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i> </span> </td>
+        <td class="services td"> <span> Develop <br> <i class="fa fa-code fa-3x" aria-hidden="true"></i> </span> </td>
+    </tr>
+    <tr>
+    	<td class="services td" style="font-size: 1.2vw !important;"> <i class="fa fa-circle" aria-hidden="true"></i> Style Guides <br> <i class="fa fa-circle" aria-hidden="true"></i> Site Branding <br> <i class="fa fa-circle" aria-hidden="true"></i> Page Layouts<br> <i class="fa fa-circle" aria-hidden="true"></i> Email/Newsletters </td>
+        <td class="services td" style="font-size: 1.2vw !important;"> <i class="fa fa-circle" aria-hidden="true"></i> User Testing <br> <i class="fa fa-circle" aria-hidden="true"></i> Personas <br> <i class="fa fa-circle" aria-hidden="true"></i> Mind Mapping <br> <i class="fa fa-circle" aria-hidden="true"></i> Experience Design </td>
+        <td class="services td" style="font-size: 1.2vw !important;"> <i class="fa fa-circle" aria-hidden="true"></i> HTML/CSS/Java <br> <i class="fa fa-circle" aria-hidden="true"></i> Wordpress <br> <i class="fa fa-circle" aria-hidden="true"></i> Site Audits <br> <i class="fa fa-circle" aria-hidden="true"></i> HTML Forms</td>
+    </tr>
+</table>    
+</section>
+
+
+<section id="work-section">
+    <h2 style="text-align: left; color: #45B29D;margin: 10px 5% 5% 5%;"> Work </h2> 
+    <table id="work">
+    <tr>
+    	<td> <img src="http://rodixondesigns.com/wp-content/themes/latte_Child/photos/Large_Logo.png" width="50%" height="auto" alt="Logo"/> <br> <a href="https://www.behance.net/gallery/43461209/Portfolio-Site-Design-Branding" target="_blank">Rdd Site Logo</a></td> 
+ 
+        <td onclick="myFunction()"> <img src="http://rodixondesigns.com/wp-content/themes/latte_Child/photos/Bro4Do_Logo.png" width="50%" height="auto" alt="Logo"/> <br><br> <a href="https://www.behance.net/gallery/43461247/Bro-For-Dough-Website-Design" target="_blank">Bro For Dough</a></td>
+        
+        
+        <td onclick="myFunction()"> <img src="http://rodixondesigns.com/wp-content/themes/latte_Child/photos/ContactUs_Redesign.png" width="50%" height="auto" alt="Logo"/> <br> <a href="https://www.behance.net/gallery/33437979/UX-Prototype-Redesign-of-Clients-Contact-Us-Page" target="_blank"> Page Redesign </a></td>
+       
+    </tr>
+    </table>
+</section>
+
+</body>
+</html>
