@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+html, body {
+	width: 100vw;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/* Text Specifications */
+h1 {
+	font-size: 4.0vw;
+	font-family: 'Lobster', cursive;
+	line-height: 130%; 
+}
+
+h2 {
+	font-size: 3.5vw;
+	font-family: 'Lobster', cursive;
+	line-height: 130%; 
+}
+
+h3 {
+	font-size: 2.5vw; 
+	font-family: 'Fira Sans', sans-serif; 
+	color: #334d5c;	
+	line-height: 130%;
+}
+h4 {
+	font-size: 2.0vw; 
+	font-family: 'Fira Sans', sans-serif; 
+	color: #334d5c;	
+	line-height: 130%;
+}
+h5 {
+	font-size: 1.5vw !important;
+	font-family: 'Fira Sans', sans-serif; 
+	color: #334d5c;	
+	line-height: 130%; 
+}
+
+a, li {
+	font-family:'Fira Sans', sans-serif !important; 
+	font-size: 2.0vw !important;
+	color: #334d5c; 
+	text-decoration: none; 
+	cursor: pointer; 
+}
+
+a:hover, li:hover {
+	color: #45b29d; 
+}
+
+/* Push Menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #334d5c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; 
+	z-index: 9999 !important;
+}
+
+.sidenav a {
+    padding: 3%;
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+	margin-left: 25px; 
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #cafcd8;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 3vw;
+    margin-left: 50px;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+#openbtn {
+	position: fixed; 
+	font-size: 3vw;
+	color: #334d5c;
+	padding: .8vw 0 0 1.5vw; 
+	display: block;
+	background-color: #cafcd8;
+	border-radius: 50%;
+	margin-top: 25px;
+	margin-left: 15px;
+	width: 4vw;
+	height: 4vw;	
+	cursor: pointer;
+	z-index: 9998 !important;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* Home Page CSS */
+
+#front-image {
+    position: fixed; 
+    width: 100vw; 
+    height: auto; 
+    z-index: 7999; 
+    margin: 0;
+	top: 0;   
+}	
+
+#about-photo {
+	position: relative;
+	float: left;
+	width: 30vw; 
+	height: auto;
+	z-index: 8999;
+	margin: 2vw 5vw 0 5vw; 	
+}
+
+#about-section {
+	margin: 20% 0 0 0; 
+	position: relative;
+	width: 100vw; 
+	height: auto; 
+	overflow: hidden;
+	display: block; 
+	background: #ffffff; 
+	padding: 4vw; 
+	z-index: 8999;
+}
+
+#rdd-logo {
+	position: relative; 
+	float: center; 
+	margin-top: 15%;
+	margin-left: 35%;
+	z-index: 9999;
+	width: 30%; 
+	height: auto;
+}
+
+#rdd-text {
+	position: relative;
+	float: center;
+	text-align: center;   
+	z-index: 9999; 
+	color: #CAFCD8;
+	padding: 10px; 
+}
+
+#about-button {
+	position: relative;
+	float: left; 
+	margin: 5%;
+	background-color: #334d5c;
+	border: 1vw solid #334d5c;
+	font-family: 'Lobster', cursive;
+	font-size: 2vw; 
+	font-weight: 400; 
+	color: #cafcd8;
+	width: 20vw; 
+	height: auto; 
+	cursor: pointer; 
+}
+
+.about-button:hover {
+	background-color: #ffffff;
+	color: #334d5c; 	
+}
+
+.services {
+	font-family: 'Fira Sans', sans-serif;
+	background-color: #334D5C; 
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle !important;
+	width: 90vw; 
+	height: auto;
+}
+
+.services td {
+	width: 20%; 
+	background-color: #334D5C;
+	color: #cafcd8;
+	max-height: 200px; 
+	padding: 10px; 
+	font-size: 3.0vw;
+}
+
+#services-section {
+	position: relative;
+	width: 100vw; 
+	max-height: 70vh; 
+	overflow: hidden;
+	display: block; 
+	background: #334D5C; 
+	padding: 2% 15% 5% 15%; 
+	z-index: 8999;
+}
+
+#work-section {
+	position: relative;
+	width: 100vw; 
+	height: auto; 
+	display: block; 
+	background: #ffffff; 
+	padding: 2vw; 
+	z-index: 8999;
+	overflow: hidden;
+}
+
+#work {
+	font-family: 'Fira Sans', sans-serif !important;
+	background-color: #ffffff; 
+	border: none;
+	padding: 2vw; 
+	text-align: center;
+	vertical-align: middle !important;
+	margin: 3vw;
+	width: 90vw; 
+	height: auto;
+}
+
+#work td {
+	width: 20vw; 
+	background-color: #f2d03b;
+	opacity: .7; 
+	border: 0.5vw solid #ffffff;
+	border-radius: 5%;  
+	max-height: 20vh; 
+	padding: 2vw; 
+	font-size: 2.0vw !important;
+	align-text: center !important;
+	line-height: 120%;
+	cursor: pointer; 
+} 
+
+#work td:hover {
+	color: #cafcd8;
+}
+
+#footer {
+	background-color: #334d5c;
+	width: 100%;
+	height: 50px; 	
+}
+
