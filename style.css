@@ -185,9 +185,28 @@ a:hover, li:hover {
 	color: #334d5c; 	
 }
 
+.about-title {
+	text-align: left; 
+	color: #45B29D;
+	margin: 10px 5% 5% 5%;
+}
+
+.service-title {
+	color: #cafcd8; 
+	margin-bottom: 0; 
+	position: relative; 
+	float: left;
+}
+@media screen and (max-width: 600px) {
+  .service-title {display: none;}
+  .tabs {float: center;}
+}
+
 .services {
 	font-family: 'Fira Sans', sans-serif;
 	background-color: #334D5C; 
+	position: relative;
+	float: right;
 	padding: 10px;
 	text-align: left;
 	vertical-align: middle !important;
@@ -207,12 +226,24 @@ a:hover, li:hover {
 #services-section {
 	position: relative;
 	width: 100vw; 
-	max-height: 70vh; 
+	height:auto; 
 	overflow: hidden;
 	display: block; 
 	background: #334D5C; 
-	padding: 2% 15% 5% 15%; 
+	padding: 2%; 
 	z-index: 8999;
+}
+
+#why-section {
+	position: relative;
+	width: 85%; 
+	height: auto; 
+	display: block; 
+	background: #ffffff; 
+	padding: 40px; 
+	margin: 5%;
+	z-index: 8999;
+	overflow: hidden;
 }
 
 #work-section {
@@ -240,10 +271,11 @@ a:hover, li:hover {
 
 #work td {
 	width: 20vw; 
-	background-color: #f2d03b;
-	opacity: .7; 
-	border: 0.5vw solid #ffffff;
-	border-radius: 5%;  
+	background-color: #ffffff;
+	border: 2px solid #efefef;
+	border-radius: 3%; 
+	box-shadow: 0 4px 8px 0 #f3f3f3;
+    transition: 0.3s; 
 	max-height: 20vh; 
 	padding: 2vw; 
 	font-size: 2.0vw !important;
@@ -256,9 +288,275 @@ a:hover, li:hover {
 	color: #cafcd8;
 }
 
-#footer {
-	background-color: #334d5c;
-	width: 100%;
-	height: 50px; 	
+#map-section {
+	position: relative;
+	width: 100vw; 
+	height: auto; 
+	display: block; 
+	background: #ffffff; 
+	padding: 5vw; 
+	z-index: 8998;
+	overflow: hidden; 	
 }
 
+#map {
+  position: relative;
+  float: left;
+  height: 20vw;
+  width: 40vw;
+  background-color: #efefef;
+  z-index: 8999;
+ }
+ 
+ #social {
+	position: relative;
+	width: 100vw; 
+	height: auto;
+	margin: 0;
+	display: block; 
+	background: #334D5C;  
+	z-index: 8998;
+	overflow: hidden;
+	padding: 2vw 4vw 0 4vw;
+ }
+ 
+ #form-section {
+	position: relative;
+	width: 100vw; 
+	height: auto;
+	margin: 0; 
+	display: block; 
+	background: #f3f3f3; 
+	padding: 2vw 4vw; 
+	z-index: 8999;
+	overflow: hidden;
+ }
+ 
+ 
+ input {
+	border: none;
+    border-bottom: 2px solid #334D5C;
+	background-color: transparent;
+	font-size: 2vw;
+	font-family: 'Fira Sans', sans-serif;
+	width: 40vw;
+	height: auto;	
+	margin-right: 4vw; 
+ }
+ 
+ input:focus {
+	background-color: #334D5C;
+	color: #ffffff; 	 
+ }
+ 
+ textarea {
+	border: 2px solid #334D5C; 
+	background-color: transparent;
+	font-size: 1.5vw;
+	font-family: 'Fira Sans', sans-serif;
+	width: 40vw;
+	height: 10vw;
+	border-radius: 1%;
+	padding: 10px;
+	margin: auto 5% auto 2%;
+ }
+ 
+ textarea:focus {
+	background-color: #334D5C;
+	color: #ffffff; 	
+ }
+ 
+ #submit-button {
+	margin: 2% 0;
+	background-color: #334d5c;
+	border: 1vw solid #334d5c;
+	font-family: 'Lobster', cursive;
+	font-size: 1.5vw; 
+	font-weight: 400; 
+	color: #cafcd8;
+	padding: 2px 1vw;
+	cursor: pointer; 
+}
+
+/* Tabs */
+.container-tabs{
+	padding: 1vw;
+	margin: 0 2vw 2vw 2vw;
+}
+
+ul.tabs{
+	list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+	font-family: 'Fira Sans', sans-serif;
+}
+ul.tabs li{
+	position: relative; 
+	float: right;
+	margin-right: 6vw;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    transition: 0.3s; 
+    font-size: 2vw;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: #45B29D;
+	border: 3px solid #45B29D;
+	border-radius: 50%; 
+	padding: 25px; 
+}
+
+.tab-content{
+	display: none;
+    padding: 6px 12px;
+    border: none;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+/* Skills Section: Using CSS Keyframes */ 
+#codeconSkills {
+font-size: 2vw;
+height: auto;
+margin: 0 auto;
+padding: 10px;
+width: 75%;
+float: right;
+}
+#codeconSkills img {
+width: 20%;
+height: 10%;
+margin: auto 35%;
+padding: 10px;
+}
+.codeconSkillbar {
+width: 90%;
+height: 50px;
+position: relative;
+background:  #efefef;
+margin: 20px auto;
+}
+#codeconHTML {
+width: 90%;
+animation: Animate-HTML 3s;
+-webkit-animation: Animate-HTML 3s;
+-moz-animation: Animate-HTML 3s;
+-o-animation: Animate-HTML 3s;
+-ms-animation: Animate-HTML 3s;
+height: 50px;
+position: absolute;
+background-color: #ea8564;
+}
+@keyframes Animate-HTML {
+from {width: 10px;}
+to {width: 90%} }
+@-webkit-keyframes Animate-HTML {
+from {width: 10px;}
+to {width: 90%}}
+@-moz-keyframes Animate-HTML {
+from {width: 10px;}
+to {width: 90%}}
+@-o-keyframes Animate-HTML {
+from {width: 10px;}
+to {width: 90%}}
+
+#codeconjQuery {
+animation: Animate-jQuery 3s;
+-webkit-animation: Animate-jQuery 3s;
+-moz-animation: Animate-jQuery 3s;
+-o-animation: Animate-jQuery 3s;
+-ms-animation: Animate-jQuery 3s;
+width: 60%;
+height: 50px;
+position: absolute;
+background-color: #99856d;
+}
+@keyframes Animate-jQuery {
+from {width: 10px;}
+to {width: 60%} }
+@-webkit-keyframes Animate-jQuery {
+from {width: 10px;}
+to {width: 60%}}
+@-moz-keyframes Animate-jQuery {
+from {width: 10px;}
+to {width: 60%}}
+@-o-keyframes Animate-jQuery {
+from {width: 10px;}
+to {width: 60%}}
+
+#codeconWord {
+animation: Animate-jQuery 3s;
+-webkit-animation: Animate-jQuery 3s;
+-moz-animation: Animate-jQuery 3s;
+-o-animation: Animate-jQuery 3s;
+-ms-animation: Animate-jQuery 3s;
+width: 70%;
+height: 50px;
+position: absolute;
+background-color: #45B29D;
+}
+@keyframes Animate-Word {
+from {width: 10px;}
+to {width: 70%} }
+@-webkit-keyframes Animate-Word {
+from {width: 10px;}
+to {width: 70%}}
+@-moz-keyframes Animate-Word {
+from {width: 10px;}
+to {width: 70%}}
+@-o-keyframes Animate-Word {
+from {width: 10px;}
+to {width: 70%}}
+
+#codeconUX {
+animation: Animate-UX 3s;
+-webkit-animation: Animate-UX 3s;
+-moz-animation: Animate-UX 3s;
+-o-animation: Animate-UX 3s;
+-ms-animation: Animate-UX 3s;
+width: 100%;
+height: 50px;
+position: absolute;
+background-color: #F2D03B;
+}
+@keyframes Animate-UX {
+from {width: 10px;}
+to {width: 100%} }
+@-webkit-keyframes Animate-UX {
+from {width: 10px;}
+to {width: 100%}}
+@-moz-keyframes Animate-UX {
+from {width: 10px;}
+to {width: 100%}}
+@-o-keyframes Animate-UX {
+from {width: 10px;}
+to {width: 100%}}
+
+.codeconSkillArea {
+z-index: 1;
+float: left;
+position: absolute;
+margin-top: 10px;
+margin-left: 15px;
+text-shadow: none;
+color: #fff;
+font-family: 'Fira Sans', sans-serif;
+font-size: 2vw;
+}
+.PercentText {
+z-index: 3;
+position: relative;
+padding-right: 15px;
+margin-top: 10px;
+float: right;
+text-shadow: none;
+color: #fff;
+font-family: 'Lobster', sans-serif;
+font-size: 2vw;
+}
