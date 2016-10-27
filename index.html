@@ -64,7 +64,7 @@ $(window).resize(function(){
     <span id="openbtn" onclick="openNav()"><i class="fa fa-plus"></i></span>
 		<script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "200px";
+            document.getElementById("mySidenav").style.width = "25%";
         }
         
         function closeNav() {
@@ -83,8 +83,8 @@ $(window).resize(function(){
 
 <section id="about-section">
     <h2 class="about-title"> <u>Who</u> am I? </h2> 
-    <img id="about-photo" src="photos/About-photo2.jpg" alt="Ro Dixon"/> 
-    <h3 style="float: left; width: 40%; height: auto;"> I'm Ro Dixon, UX Designer by day and Web developer by night. I've spent the last seven years in UX and I love it, but I found myself tired of turning to a developer every time one of my designs was ready to produce. So I've been learning to code my designs myself, and it's been liberating. Now I really want to share that ability with others. </h3>
+    <img id="about-photo" src="photos/About-photo2.jpg" alt="Ro Dixon"/> <br>
+    <about> I'm Ro Dixon, UX Designer by day and Web developer by night. I've spent the last seven years in UX and I love it, but I found myself tired of turning to a developer every time one of my designs was ready to produce. So I've been learning to code my designs myself, and it's been liberating. Now I really want to share that ability with others. </about>
     <!-- <button id="about-button"> Learn more </button> -->
     
 </section>
@@ -99,7 +99,7 @@ $(window).resize(function(){
 	</ul>
 
 	<div id="tab-1" class="tab-content">
-        <h4 style="color: #ffffff; float: right; margin-right: 15%;"> Brand new website (1-3 pages): $300<br> Brand new website (4-5 pages): $500 <br> Redesigning an existing page: $99 <br> HTML Emails & Newsletters: $99-$150 </br> New HTML Forms: $50-$100 <br><br> *Contact me with questions. <br> **Prices will increase as I gain experience.</h4>
+        <prices>Brand new website (1-3 pages): $300<br> Brand new website (4-5 pages): $500 <br> Redesigning an existing page: $99 <br> HTML Emails & Newsletters: $99-$150 </br> New HTML Forms: $50-$100 <br><br> *Contact me with questions. <br> **Prices will increase as I gain experience.</prices>
 	</div>
 	<div id="tab-2" class="tab-content">
 		 <table class="services">
@@ -196,7 +196,7 @@ function initMap() {
       method="POST">
     <div style="float: left;"><h4 style="margin:0;">Name</h4><input type="text" name="name"> <br><br>
     <h4 style="margin:0;">Email</h4><input type="email" name="_replyto"> </div>
-    <div style="float: center;"> <textarea name="message" onfocus="this.value='';">Include your message here</textarea><br>
+    <div id="contactbox" style="float: center;"> <textarea name="message" onfocus="this.value='';">Include your message here</textarea><br>
     <button type="submit" id="submit-button">Submit</button></div>
 </form>
 </section>
