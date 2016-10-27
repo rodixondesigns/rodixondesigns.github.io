@@ -1,562 +1,229 @@
-@charset "UTF-8";
-/* CSS Document */
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hi, I'm Ro! I Design, Research and Develop beautiful websites for the louisville Kentucky and Southern Indiana area. I have over seven years in User Experience Design and a have spent the last year growing my knowledge of HTML, CSS, Java, jQuery, WordPress and PHP. I would love to work with you on your next web design project!">
+<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="photos/Favicon2(100x100).png">
+<title>Ro Dixon Designs: Web Design, Research and Development for small businesses and individuals in need of an amazing website. </title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lobster" rel="stylesheet">
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/f766bd3c92.js"></script>
+<!-- Jquery (Local) -->
+<script src="jquery-3.1.1.slim.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86291678-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<script>
+var winWidth = 0;  /* Window width */
 
 
-html, body {
-	width: 100vw;
-	height: auto;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
+ $(document).ready(function() {
+
+
+setContainerDims();
+
+
+function setContainerDims(){
+    winWidth = parseInt($(window).width());
+
+    $("body").css({"width":winWidth});
 }
 
-/* Text Specifications */
-h1 {
-	font-size: 4.0vw;
-	font-family: 'Lobster', cursive;
-	line-height: 130%; 
+$(window).resize(function(){
+    setContainerDims();
+})
+
+});
+</script>
+
+<section>
+<div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#about-section">Who?</a>
+      <a href="#services-section">What?</a>
+      <a href="#why-section">Why?</a>
+      <a href="#map-section">Where?</a>
+      <a href="#form-section">Contact Me</a>
+      <a href="#work-section">My Work</a>
+      <a href="#social-section">Follow Me</a>
+    </div>
+    <span id="openbtn" onclick="openNav()"><i class="fa fa-plus"></i></span>
+		<script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "25%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+<img id="front-image" src="photos/backgroundphoto.png" alt="Background Image"/>
+</section>
+
+<section>
+<img id="rdd-logo" src="photos/LargeLogo3.png" alt="Site Logo"/> 
+<h2 id="rdd-text"> <strong> Design . Research . Develop </strong> </h2> 
+</section>
+
+<br>
+
+<section id="about-section">
+    <h2 class="about-title"> <u>Who</u> am I? </h2> 
+    <img id="about-photo" src="photos/About-photo2.jpg" alt="Ro Dixon"/> <br>
+    <about> I'm Ro Dixon, UX Designer by day and Web developer by night. I've spent the last seven years in UX and I love it, but I found myself tired of turning to a developer every time one of my designs was ready to produce. So I've been learning to code my designs myself, and it's been liberating. Now I really want to share that ability with others. </about>
+    <!-- <button id="about-button"> Learn more </button> -->
+    
+</section>
+
+<section id="services-section"> 
+	<h2 class="service-title"> <u>What</u> can I do?</h2>
+    <div class="container-tabs">
+	<ul class="tabs">
+		<li class="tab-link" data-tab="tab-1"><i class="fa fa-money" aria-hidden="true"></i> <br> Prices</li>
+		<li class="tab-link" data-tab="tab-2"><i class="fa fa-cogs" aria-hidden="true"></i> <br> Services</li>
+		<li class="tab-link current" data-tab="tab-3"><i class="fa fa-wrench" aria-hidden="true"></i><br> Skills</li>
+	</ul>
+
+	<div id="tab-1" class="tab-content">
+        <prices>Brand new website (1-3 pages): $300<br> Brand new website (4-5 pages): $500 <br> Redesigning an existing page: $99 <br> HTML Emails & Newsletters: $99-$150 </br> New HTML Forms: $50-$100 <br><br> *Contact me with questions. <br> **Prices will increase as I gain experience.</prices>
+	</div>
+	<div id="tab-2" class="tab-content">
+		 <table class="services">
+            <tr>
+            	<td class="services td"> <span> Develop <br> <i class="fa fa-code fa-3x" aria-hidden="true"></i> </span> </td>
+                <td class="services td"> <span> Research <br> <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i> </span> </td>
+                <td class="services td"> <span> Design <br> <i class="fa fa-eye fa-3x" aria-hidden="true"></i> </span> </td>
+            </tr>
+            <tr>
+                <td class="services td" style="font-size: 1.2vw !important;"> <i class="fa fa-circle" aria-hidden="true"></i> Responsive Websites <br> <i class="fa fa-circle" aria-hidden="true"></i> Wordpress <br> <i class="fa fa-circle" aria-hidden="true"></i> Site Audits <br> <i class="fa fa-circle" aria-hidden="true"></i> HTML Forms</td>
+                <td class="services td" style="font-size: 1.2vw !important;"> <i class="fa fa-circle" aria-hidden="true"></i> User Testing <br> <i class="fa fa-circle" aria-hidden="true"></i> Personas <br> <i class="fa fa-circle" aria-hidden="true"></i> Experience Design </td>
+                <td class="services td" style="font-size: 1.2vw !important;"> <i class="fa fa-circle" aria-hidden="true"></i> Style Guides <br> <i class="fa fa-circle" aria-hidden="true"></i> Site Branding <br> <i class="fa fa-circle" aria-hidden="true"></i> Page Layouts<br> <i class="fa fa-circle" aria-hidden="true"></i> Email/Newsletters </td>
+            </tr>
+    	</table> 
+	</div>
+	<div id="tab-3" class="tab-content current">
+        <div id="codeconSkills">
+        <div class="codeconSkillbar">
+        <div id="codeconHTML"> 
+        <span class="codeconSkillArea ">HTML/CSS</span>
+        <span class="PercentText ">90%</span>
+        </div>
+        </div>
+        <div class="codeconSkillbar">
+        <div id="codeconjQuery">
+        <span class="codeconSkillArea ">Javscript/jQuery</span>
+        <span class="PercentText ">60%</span>
+        </div>
+        </div>
+        <div class="codeconSkillbar">
+        <div id="codeconWord">
+        <span class="codeconSkillArea ">WordPress</span>
+        <span class="PercentText ">70%</span>
+        </div>
+        </div>
+        <div class="codeconSkillbar">
+        <div id="codeconUX">
+        <span class="codeconSkillArea ">User Experience</span>
+        <span class="PercentText ">100%</span>
+        </div>
+        </div>
+        </div>
+	</div>
+	
+
+</div> <!-- container -->
+
+<script>
+$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
+</script>
+     
+</section>
+
+<section id="why-section">
+<h2 style="text-align: right; color: #45B29D;margin: 10px 10% 5% 5%;"> <u>Why</u> hire me? </h2>
+<h4>I like working with individuals and smaller to medium-sized businesses, because I'm uniquely qualified to offer them a web design experience that they normally would not be able to afford. Larger design firms starting price is typically $10,000 or more. I can't do everything that larger companies can, but for what most smaller businesses need, I'm perfect! I can design, develop, and test a beautiful website, and you won't have to pay me $10,000 to do it. </h4> 
+</section>
+
+<section id="map-section">
+<h2 style="text-align: left; color: #45B29D;margin: 10px 5%;"> <u>Where</u> can you find me? </h2>
+<div id="map"></div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqQ1GNkS9gzxMPnAUoMIhYI0CsdbELME&callback=initMap"></script>
+<script>
+function initMap() {
+  var uluru = {lat: 38.325593, lng: -85.779744};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
 }
+</script>
+<h4 style="text-align: center; margin: 5vw 10vw;"> If you'd like to meet in person to discuss your next project, I'm located in the Kentuckiana area. Too far? I'm willing to work remote if you are! </h4>
+</section>
 
-h2 {
-	font-size: 3.5vw;
-	font-family: 'Lobster', cursive;
-	line-height: 130%; 
-}
+<section id="form-section">
+<h2 style="text-align: center; color: #334D5C; margin: 1% auto 4% auto;"> Contact </h2>
+<form action="https://formspree.io/rodixondesigns@gmail.com"
+      method="POST">
+    <div style="float: left;"><h4 style="margin:0;">Name</h4><input type="text" name="name"> <br><br>
+    <h4 style="margin:0;">Email</h4><input type="email" name="_replyto"> </div>
+    <div id="contactbox" style="float: center;"> <textarea name="message" onfocus="this.value='';">Include your message here</textarea><br>
+    <button type="submit" id="submit-button">Submit</button></div>
+</form>
+</section>
 
-h3 {
-	font-size: 2.5vw; 
-	font-family: 'Fira Sans', sans-serif; 
-	color: #334d5c;	
-	line-height: 130%;
-}
-h4 {
-	font-size: 2.0vw; 
-	font-family: 'Fira Sans', sans-serif; 
-	color: #334d5c;	
-	line-height: 130%;
-}
-h5 {
-	font-size: 1.5vw !important;
-	font-family: 'Fira Sans', sans-serif; 
-	color: #334d5c;	
-	line-height: 130%; 
-}
-
-a, li {
-	font-family:'Fira Sans', sans-serif !important; 
-	font-size: 2.0vw !important;
-	color: #334d5c; 
-	text-decoration: none; 
-	cursor: pointer; 
-}
-
-a:hover, li:hover {
-	color: #45b29d; 
-}
-
-/* Push Menu */
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #334d5c;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px; 
-	z-index: 9999 !important;
-}
-
-.sidenav a {
-    padding: 3%;
-    text-decoration: none;
-    font-size: 2.5vw;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-	margin-left: 25px; 
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #cafcd8;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 5%;
-    font-size: 3vw;
-    margin-left: 50px;
-	cursor: pointer;
-	z-index: 9999;
-}
-
-#openbtn {
-	position: fixed; 
-	font-size: 3vw;
-	color: #334d5c;
-	padding: .8vw 0 0 1.5vw; 
-	display: block;
-	background-color: #cafcd8;
-	border-radius: 50%;
-	margin-top: 25px;
-	margin-left: 15px;
-	width: 4vw;
-	height: 4vw;	
-	cursor: pointer;
-	z-index: 9998 !important;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-/* Home Page CSS */
-
-#front-image {
-    position: fixed; 
-    width: 100vw; 
-    height: auto; 
-    z-index: 7999; 
-    margin: 0;
-	top: 0;   
-}	
-
-#about-photo {
-	position: relative;
-	float: left;
-	width: 30vw; 
-	height: auto;
-	z-index: 8999;
-	margin: 2vw 5vw 0 5vw; 	
-}
-
-#about-section {
-	margin: 20% 0 0 0; 
-	position: relative;
-	width: 100vw; 
-	height: auto; 
-	overflow: hidden;
-	display: block; 
-	background: #ffffff; 
-	padding: 4vw; 
-	z-index: 8999;
-}
-
-#rdd-logo {
-	position: relative; 
-	float: center; 
-	margin-top: 15%;
-	margin-left: 35%;
-	z-index: 9999;
-	width: 30%; 
-	height: auto;
-}
-
-#rdd-text {
-	position: relative;
-	float: center;
-	text-align: center;   
-	z-index: 9999; 
-	color: #CAFCD8;
-	padding: 10px; 
-}
-
-#about-button {
-	position: relative;
-	float: left; 
-	margin: 5%;
-	background-color: #334d5c;
-	border: 1vw solid #334d5c;
-	font-family: 'Lobster', cursive;
-	font-size: 2vw; 
-	font-weight: 400; 
-	color: #cafcd8;
-	width: 20vw; 
-	height: auto; 
-	cursor: pointer; 
-}
-
-.about-button:hover {
-	background-color: #ffffff;
-	color: #334d5c; 	
-}
-
-.about-title {
-	text-align: left; 
-	color: #45B29D;
-	margin: 10px 5% 5% 5%;
-}
-
-.service-title {
-	color: #cafcd8; 
-	margin-bottom: 0; 
-	position: relative; 
-	float: left;
-}
-@media screen and (max-width: 600px) {
-  .service-title {display: none;}
-  .tabs {float: center;}
-}
-
-.services {
-	font-family: 'Fira Sans', sans-serif;
-	background-color: #334D5C; 
-	position: relative;
-	float: right;
-	padding: 10px;
-	text-align: left;
-	vertical-align: middle !important;
-	width: 90vw; 
-	height: auto;
-}
-
-.services td {
-	width: 20%; 
-	background-color: #334D5C;
-	color: #cafcd8;
-	max-height: 200px; 
-	padding: 10px; 
-	font-size: 3.0vw;
-}
-
-#services-section {
-	position: relative;
-	width: 100vw; 
-	height:auto; 
-	overflow: hidden;
-	display: block; 
-	background: #334D5C; 
-	padding: 2%; 
-	z-index: 8999;
-}
-
-#why-section {
-	position: relative;
-	width: 85%; 
-	height: auto; 
-	display: block; 
-	background: #ffffff; 
-	padding: 40px; 
-	margin: 5%;
-	z-index: 8999;
-	overflow: hidden;
-}
-
-#work-section {
-	position: relative;
-	width: 100vw; 
-	height: auto; 
-	display: block; 
-	background: #ffffff; 
-	padding: 2vw; 
-	z-index: 8999;
-	overflow: hidden;
-}
-
-#work {
-	font-family: 'Fira Sans', sans-serif !important;
-	background-color: #ffffff; 
-	border: none;
-	padding: 2vw; 
-	text-align: center;
-	vertical-align: middle !important;
-	margin: 3vw;
-	width: 90vw; 
-	height: auto;
-}
-
-#work td {
-	width: 20vw; 
-	background-color: #ffffff;
-	border: 2px solid #efefef;
-	border-radius: 3%; 
-	box-shadow: 0 4px 8px 0 #f3f3f3;
-    transition: 0.3s; 
-	max-height: 20vh; 
-	padding: 2vw; 
-	font-size: 2.0vw !important;
-	align-text: center !important;
-	line-height: 120%;
-	cursor: pointer; 
-} 
-
-#work td:hover {
-	color: #cafcd8;
-}
-
-#map-section {
-	position: relative;
-	width: 100vw; 
-	height: auto; 
-	display: block; 
-	background: #ffffff; 
-	padding: 5vw; 
-	z-index: 8998;
-	overflow: hidden; 	
-}
-
-#map {
-  position: relative;
-  float: left;
-  height: 20vw;
-  width: 40vw;
-  background-color: #efefef;
-  z-index: 8999;
- }
+<section id="work-section">
+    <h2 style="text-align: left; color: #45B29D;margin: 10px 5% 5% 5%;"> Work </h2> 
+    <table id="work">
+    <tr>
+    	<td> <img src="photos/LargeLogo3.png" width="50%" height="auto" alt="Logo"/> <br> <a href="https://www.behance.net/gallery/43461209/Portfolio-Site-Design-Branding" target="_blank">Rdd Site Logo</a></td> 
  
- #social {
-	position: relative;
-	width: 100vw; 
-	height: auto;
-	margin: 0;
-	display: block; 
-	background: #334D5C;  
-	z-index: 8998;
-	overflow: hidden;
-	padding: 2vw 4vw 0 4vw;
- }
- 
- #form-section {
-	position: relative;
-	width: 100vw; 
-	height: auto;
-	margin: 0; 
-	display: block; 
-	background: #f3f3f3; 
-	padding: 2vw 4vw; 
-	z-index: 8999;
-	overflow: hidden;
- }
- 
- 
- input {
-	border: none;
-    border-bottom: 2px solid #334D5C;
-	background-color: transparent;
-	font-size: 2vw;
-	font-family: 'Fira Sans', sans-serif;
-	width: 40vw;
-	height: auto;	
-	margin-right: 4vw; 
- }
- 
- input:focus {
-	background-color: #334D5C;
-	color: #ffffff; 	 
- }
- 
- textarea {
-	border: 2px solid #334D5C; 
-	background-color: transparent;
-	font-size: 1.5vw;
-	font-family: 'Fira Sans', sans-serif;
-	width: 40vw;
-	height: 10vw;
-	border-radius: 1%;
-	padding: 10px;
-	margin: auto 5% auto 2%;
- }
- 
- textarea:focus {
-	background-color: #334D5C;
-	color: #ffffff; 	
- }
- 
- #submit-button {
-	margin: 2% 0;
-	background-color: #334d5c;
-	border: 1vw solid #334d5c;
-	font-family: 'Lobster', cursive;
-	font-size: 1.5vw; 
-	font-weight: 400; 
-	color: #cafcd8;
-	padding: 2px 1vw;
-	cursor: pointer; 
-}
+        <td onclick="myFunction()"> <img src="photos/Bro4Dough-Logo.png" width="50%" height="auto" alt="Logo"/> <br><br> <a href="https://www.behance.net/gallery/43461247/Bro-For-Dough-Website-Design" target="_blank">Bro For Dough</a></td>
+        
+        <td onclick="myFunction()"> <img src="photos/ContactUs-Redesign.png" width="50%" height="auto" alt="Logo"/> <br> <a href="https://www.behance.net/gallery/33437979/UX-Prototype-Redesign-of-Clients-Contact-Us-Page" target="_blank"> Page Redesign </a></td>
+    </tr>
+    </table>
+</section>
 
-/* Tabs */
-.container-tabs{
-	padding: 1vw;
-	margin: 0 2vw 2vw 2vw;
-}
+<section id="social">
+<h2 style="float: left; color: #ffffff; margin-right: 5%;"> Follow Me </h2> 
+<div style="float: center;">
+<a href="https://twitter.com/rodixon30?lang=en" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="color: #fff; margin: 1vw 4vw;"></i></a>
+<a href="https://github.com/rodixondesigns" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true" style="color: #fff; margin: 1vw 4vw;"></i></a> 
+<a href="https://medium.com/@rodixon30" target="_blank"><i class="fa fa-medium fa-3x" aria-hidden="true" style="color: #fff; margin: 1vw 4vw;"></i></a>
+<a href="https://www.behance.net/ro_dixon" target="_blank"><i class="fa fa-behance-square fa-3x" aria-hidden="true" style="color: #fff; margin: 1vw 4vw;"></i></a>
+<a href="https://dribbble.com/rodixon30" target="_blank"><i class="fa fa-dribbble fa-3x" aria-hidden="true" style="color: #fff; margin: 1vw 4vw;"></i></a>
+</div>
+</section>
 
-ul.tabs{
-	list-style-type: none;
-    overflow: hidden;
-    background-color: transparent;
-	font-family: 'Fira Sans', sans-serif;
-}
-ul.tabs li{
-	position: relative; 
-	float: right;
-	margin-right: 6vw;
-    color: #ffffff;
-    text-align: center;
-    padding: 25px;
-    text-decoration: none;
-    transition: 0.3s; 
-    font-size: 2vw;
-	cursor: pointer;
-}
-
-ul.tabs li.current{
-	background: #45B29D;
-	border: 3px solid #45B29D;
-	border-radius: 50%; 
-	padding: 25px; 
-}
-
-.tab-content{
-	display: none;
-    padding: 6px 12px;
-    border: none;
-}
-
-.tab-content.current{
-	display: inherit;
-}
-
-/* Skills Section: Using CSS Keyframes */ 
-#codeconSkills {
-font-size: 2vw;
-height: auto;
-margin: 0 auto;
-padding: 10px;
-width: 75%;
-float: right;
-}
-#codeconSkills img {
-width: 20%;
-height: 10%;
-margin: auto 35%;
-padding: 10px;
-}
-.codeconSkillbar {
-width: 90%;
-height: 50px;
-position: relative;
-background:  #efefef;
-margin: 20px auto;
-}
-#codeconHTML {
-width: 90%;
-animation: Animate-HTML 3s;
--webkit-animation: Animate-HTML 3s;
--moz-animation: Animate-HTML 3s;
--o-animation: Animate-HTML 3s;
--ms-animation: Animate-HTML 3s;
-height: 50px;
-position: absolute;
-background-color: #ea8564;
-}
-@keyframes Animate-HTML {
-from {width: 10px;}
-to {width: 90%} }
-@-webkit-keyframes Animate-HTML {
-from {width: 10px;}
-to {width: 90%}}
-@-moz-keyframes Animate-HTML {
-from {width: 10px;}
-to {width: 90%}}
-@-o-keyframes Animate-HTML {
-from {width: 10px;}
-to {width: 90%}}
-
-#codeconjQuery {
-animation: Animate-jQuery 3s;
--webkit-animation: Animate-jQuery 3s;
--moz-animation: Animate-jQuery 3s;
--o-animation: Animate-jQuery 3s;
--ms-animation: Animate-jQuery 3s;
-width: 60%;
-height: 50px;
-position: absolute;
-background-color: #99856d;
-}
-@keyframes Animate-jQuery {
-from {width: 10px;}
-to {width: 60%} }
-@-webkit-keyframes Animate-jQuery {
-from {width: 10px;}
-to {width: 60%}}
-@-moz-keyframes Animate-jQuery {
-from {width: 10px;}
-to {width: 60%}}
-@-o-keyframes Animate-jQuery {
-from {width: 10px;}
-to {width: 60%}}
-
-#codeconWord {
-animation: Animate-jQuery 3s;
--webkit-animation: Animate-jQuery 3s;
--moz-animation: Animate-jQuery 3s;
--o-animation: Animate-jQuery 3s;
--ms-animation: Animate-jQuery 3s;
-width: 70%;
-height: 50px;
-position: absolute;
-background-color: #45B29D;
-}
-@keyframes Animate-Word {
-from {width: 10px;}
-to {width: 70%} }
-@-webkit-keyframes Animate-Word {
-from {width: 10px;}
-to {width: 70%}}
-@-moz-keyframes Animate-Word {
-from {width: 10px;}
-to {width: 70%}}
-@-o-keyframes Animate-Word {
-from {width: 10px;}
-to {width: 70%}}
-
-#codeconUX {
-animation: Animate-UX 3s;
--webkit-animation: Animate-UX 3s;
--moz-animation: Animate-UX 3s;
--o-animation: Animate-UX 3s;
--ms-animation: Animate-UX 3s;
-width: 100%;
-height: 50px;
-position: absolute;
-background-color: #F2D03B;
-}
-@keyframes Animate-UX {
-from {width: 10px;}
-to {width: 100%} }
-@-webkit-keyframes Animate-UX {
-from {width: 10px;}
-to {width: 100%}}
-@-moz-keyframes Animate-UX {
-from {width: 10px;}
-to {width: 100%}}
-@-o-keyframes Animate-UX {
-from {width: 10px;}
-to {width: 100%}}
-
-.codeconSkillArea {
-z-index: 1;
-float: left;
-position: absolute;
-margin-top: 10px;
-margin-left: 15px;
-text-shadow: none;
-color: #fff;
-font-family: 'Fira Sans', sans-serif;
-font-size: 2vw;
-}
-.PercentText {
-z-index: 3;
-position: relative;
-padding-right: 15px;
-margin-top: 10px;
-float: right;
-text-shadow: none;
-color: #fff;
-font-family: 'Lobster', sans-serif;
-font-size: 2vw;
-}
+</body>
+</html>
