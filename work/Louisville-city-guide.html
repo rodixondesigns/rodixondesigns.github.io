@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Accordion Example</title>
+<script src="https://use.fontawesome.com/f766bd3c92.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway|Lato|Righteous" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+button.accordion {
+    background-color: #1d407b;
+    color: #ffffff;
+    cursor: pointer;
+	padding: 0;
+    width: 100%;
+    border: 2px solid #ffffff;
+	border-radius: 0px;
+    text-align: left;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #009fc2;
+	border-radius: 0px; 
+}
+
+button.accordion:before {
+	content: "\f055";
+    font-family: FontAwesome;
+	font-size: 24px; 
+	padding: 20px; 
+    color: #ffffff;
+    float: left;
+    margin-left: 5px;
+}
+
+button.accordion.active:before {
+    content: "\f056";
+    font-family: FontAwesome;
+}
+
+div.panel {
+    padding: 10px;
+    display: none;
+    background-color: transparent;
+	border-radius: 0px; 
+	margin: 0px 2px;  
+}
+
+div.panel.show {
+    display: block !important;
+}
+
+.newspaper {
+    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 15px;
+    border-color: none;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px; 
+}
+
+p, a {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px; 
+	color: #555555;	
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #0ecefb;
+	text-decoration: underline;
+}
+
+</style>
+<body>
+
+<section style="margin: 10%;">
+<h1 style="color: #464d58;"> Louisville City Guide</h1> <br> <br>
+<button class="accordion"> <h1> Park &nbsp; <i style="color: #0ecefb" class="fa fa-car" aria-hidden="true"></i> </h1> </button>
+<div class="panel">
+	<table style="width:100%">
+    	<tr>
+            <td> <p> <strong>Eighth and Main Garage</strong> <br>  120 S. Eighth St <br>  Louisville, KY 40202 </p> </td> 
+			<td> <a href="https://www.ridetarc.org/maps-schedule/" target="_blank"> Click here for bus information </a> </td>
+        </tr>
+	</table>
+</div>
+
+
+<button class="accordion"> <h1> Stay &nbsp; <i style="color: #0ecefb" class="fa fa-bed" aria-hidden="true"></i> </h1> </button>
+<div class="panel">
+	<table style="width:100%">
+    	<tr>
+        	<td> <p> <a href="http://www.marriottlouisville.com/" target="_blank"> <strong>Louisville Downtown Marriott</strong> </a> <br> 280 W Jefferson St <br> Louisville, KY 40202 </p> </td>
+            <td> <p> <a href="http://www.marriott.com/hotels/travel/sdfgj-residence-inn-louisville-downtown/" target="_blank"> <strong>Residence Inn </strong></a> <br> 333 E Market St <br> Louisville, KY 40202 </p> </td>
+            <td> </td> 
+       </tr>
+	</table>
+</div>
+
+
+<button class="accordion"> <h1> Eat &nbsp; <i style="color: #0ecefb" class="fa fa-cutlery" aria-hidden="true"></i><h1> </button>
+<div class="panel">
+	<table style="width:100%">
+    	<tr>
+  			<td> <p> <a href="http://www.luigispizzeria.com/" target="_blank"> <strong>Luigi's Pizzeria</strong> </a> <br> 712 W Main St<br> Louisville, KY 40202 </p> </td>
+            <td> <p> <a href="http://www.bristolbarandgrille.com/downtown/" target="_blank"> <strong>Bristol Bar and Grille </strong> </a> <br> 614 W Main St #1000<br> Louisville, KY 40202 </p> </td> 
+            <td> <p> <a href="https://www.facebook.com/pages/The-Main-Eatery/117720124920365" target="_blank"> <strong> Main Eatery </strong> </a> <br> 643 W Main St<br> Louisville, KY 40202 </p> </td>
+		</tr>
+    	<tr>
+  			<td> <p> <a href="http://www.mussel-burger-bar.com/" target="_blank"> <strong>Mussel and Burger Bar</strong> </a> <br> 113 S 7th St<br> Louisville, KY 40202 </p> </td>
+            <td> <p> <a href="http://www.atlanticno5.com/" target="_blank"> <strong>Atlantic No. 5 </strong> </a> <br> 605 W Main St<br> Louisville, KY 40202 </p> </td> 
+            <td> <p> <a href="http://www.spinellispizzeria.com/index.html" target="_blank"> <strong> Spinelli’s </strong> </a> <br> 239 S 5th St<br> Louisville, KY 40202 </p> </td>
+		</tr>
+    	<tr>
+  			<td> <p> <a href="https://www.panerabread.com/" target="_blank"> <strong>Panera Bread</strong> </a> <br> 400 W Market St<br> Louisville, KY 40202 </p> </td>
+            <td> <p> <a href="https://www.jimmyjohns.com/" target="_blank"> <strong>Jimmy John's </strong> </a> <br> 415 W Jefferson St<br> Louisville, KY 40202 </p> </td> 
+            <td> <p> <a href="http://smashburger.com/" target="_blank"> <strong> Smashburger </strong> </a> <br>312 S 4th St<br> Louisville, KY 40202 </p> </td>
+		</tr>
+	</table>
+   </div>
+   
+   
+<button class="accordion"> <h1> Play &nbsp; <i style="color: #0ecefb" class="fa fa-puzzle-piece" aria-hidden="true"></i> </i><h1> </button>
+<div class="panel">
+	<table style="width:100%">
+    	<tr>
+           <td> <p> <a href="http://www.garageonmarket.com/" target="_blank"> <strong> Garage Bar </strong> </a> <br> 700 E Market St <br> Louisville, KY 40202 </p> </td>
+			<td> <p> <a href="http://louisville.bats.milb.com/index.jsp?sid=t416" target="_blank"> <strong> Louisville Slugger Field </strong> </a> <br> 401 E Main St <br> Louisville, KY 40202 </p> </td>
+			<td> <p> <a href="http://climbnulu.com/" target="_blank"> <strong> Climb Nulu </strong> </a> <br> 1000 E Market St <br> Louisville, KY 40202 </p> </td>
+        </tr>
+        <tr>
+			<td> <p> <a href="http://www.louisvillewaterfront.com/" target="_blank"> <strong> Louisville Waterfront Park </strong> </a> <br> 129 River Rd <br> <a href=" http://waterfrontwednesdays.wfpk.org/" target="_blank"> <strong> Waterfront Wednesdays </strong> </a> </p> </td> 
+            <td> <p> <a href="http://www.paytonglasscenter.com/" target="_blank"> <strong> Glassworks </strong> </a> <br> 815 West Market St <br> Louisville, KY 40202 </p> </td>
+			<td> <p> <a href="http://www.sluggermuseum.com/planyourvisit/" target="_blank"> <strong> Louisville Slugger Museum and Factory </strong> </a> <br> 800 W Main St <br> Louisville, KY 40202 </p> </td>
+		</tr>
+        <tr>
+            <td> <p> <a href="http://fraziermuseum.org/" target="_blank"> <strong> The Frazier History Museum </strong> </a> <br> 829 W Main St <br> Louisville, KY 40202 </p> </td>
+			<td> <p> <a href="http://kysciencecenter.org/" target="_blank"> <strong> Kentucky Science Center </strong> </a> <br> 727 W Main St <br> Louisville, KY 40202 </p> </td>
+			<td> <p> <a href="http://www.kentuckycenter.org/" target="_blank"> <strong> Kentucky Center for the Performing Arts </strong> </a> <br> 501 W Main St <br> Louisville, KY 40202 </p> </td>
+        </tr>
+        <tr>
+			<td> <p> <a href="http://evanwilliamsbourbonexperience.com/visit.php?page=bourbon-experience" target="_blank"> <strong> Evan Williams Bourbon Experience Arts </strong> </a> <br> 528 W Main St <br> Louisville, KY 40202 </p> </td>
+			<td> <p> <a href="http://www.alicenter.org/" target="_blank"> <strong> Muhammad Ali Center </strong> </a> <br> 144 N 6th St <br> Louisville, KY 40202 </p> </td>
+			<td> <p> <a href="http://actorstheatre.org/" target="_blank"> <strong> Actors Theater </strong> </a> <br> 316 W Main St <br> Louisville, KY 40202 </p> </td>
+ 		</tr>
+	</table>
+   </div>
+          
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+</section> 
+
+<div>
+	<div class="break"/>
+</div> 
+    
+</body> 
+</html>
