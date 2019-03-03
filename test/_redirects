@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://musing-volhard-fd63e5.netlify.com/* http://kolkincoffee.net/:splat 301!
