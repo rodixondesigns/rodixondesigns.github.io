@@ -28,7 +28,14 @@
     </head>
 
 <body>
-
+  <script>
+      $(window).bind("load", function() {
+          $("#overlay").hide(1000);
+      });
+  </script>
+  <div id="overlay">
+      <h2><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><br><br>One Moment Please!</h2>
+  </div>
     <!-- ALERT MESSAGE
     <div class="alert ro-blue">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
