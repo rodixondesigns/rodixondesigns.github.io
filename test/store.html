@@ -158,13 +158,17 @@
 
       <section id="store">
         <h1 class="ro-center">K&ouml;lkin Coffee Store</h1>
+        <div class="snipcart-summary">
+          <a href="#" class="snipcart-checkout ro-right"><i class="fa fa-shopping-cart"></i> View Cart (<span class="snipcart-total-items"></span>)</a>
+        </div>
+        <br><br>
           <div class="columns">
               <ul class="price">
                 <li><img src="store/black_thermos.jpeg" alt="16 oz Black Thermos"></li>
                 <li>16 oz Black Thermos</li>
                 <li>$15.00</li>
                 <li class="purchase">
-                  <a
+                  <a href="#"
                         class="snipcart-add-item"
                         data-item-id="1"
                         data-item-name="16oz Black Thermos"
@@ -183,7 +187,7 @@
                 <li>16oz Oval Mug</li>
                 <li>$12.50</li>
                 <li class="purchase">
-                  <a
+                  <a href="#"
                         class="snipcart-add-item"
                         data-item-id="2"
                         data-item-name="16oz oval mugs with Kolkin Logo"
@@ -202,7 +206,7 @@
                 <li>16oz Square Mug</li>
                 <li>$12.50</li>
                 <li class="purchase">
-                  <a
+                  <a href="#"
                         class="snipcart-add-item"
                         data-item-id="3"
                         data-item-name="16oz Square Mug with Kolkin Logo"
@@ -222,7 +226,7 @@
                 <li>32oz Thermos</li>
                 <li>$28.00</li>
                 <li class="purchase">
-                  <a
+                  <a href="#"
                         class="snipcart-add-item"
                         data-item-id="4"
                         data-item-name="32oz Thermos"
@@ -230,7 +234,10 @@
                         data-item-weight="20"
                         data-item-max-quantity="4"
                         data-item-url="http://rodixondesigns.com/test/store.html"
-                        data-item-description="32oz Thermos in assorted colors with Kolkin Logo">
+                        data-item-description="32oz Thermos in assorted colors with Kolkin Logo"
+                        data-item-custom1-name="Select a Color"
+                        data-item-custom1-required="true"
+                        data-item-custom1-options="Yellow|Black|Red">
                             <i class="fa fa-cart-plus"></i> Buy
                   </a>
                 </li>
@@ -242,7 +249,7 @@
                 <li>Hand Painted in Mexico</li>
                 <li>$12.00</li>
                 <li class="purchase">
-                  <a
+                  <a href="#"
                         class="snipcart-add-item"
                         data-item-id="5"
                         data-item-name="Mexican Ceramic Canister"
@@ -262,7 +269,7 @@
                 <li>Hand Painted in Mexico</li>
                 <li>$10.00</li>
                 <li class="purchase">
-                  <a
+                  <a href="#"
                         class="snipcart-add-item"
                         data-item-id="6"
                         data-item-name="Mexican Ceramic Cream Holder"
@@ -282,7 +289,7 @@
                 <li>20oz Speckled Camping Mugs</li>
                 <li>$12.50</li>
                 <li class="purchase">
-                  <a
+                  <a href="#"
                         class="snipcart-add-item"
                         data-item-id="7"
                         data-item-name="20oz Speckled Camping Mugs"
@@ -290,13 +297,23 @@
                         data-item-weight="20"
                         data-item-max-quantity="4"
                         data-item-url="http://rodixondesigns.com/test/store.html"
-                        data-item-description="20oz Speckled Camping Mugs with Kolkin Logo">
+                        data-item-description="20oz Speckled Camping Mugs with Kolkin Logo"
+                        data-item-custom1-name="Select a Color"
+                        data-item-custom1-required="true"
+                        data-item-custom1-options="Blue|Black|Green">
                             <i class="fa fa-cart-plus"></i> Buy
                   </a>
                 </li>
               </ul>
           </div>
     </section>
+    <script
+      type="text/javascript"
+      id="snipcart"
+      src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
+      data-api-key="{API_KEY}"
+      data-autopop="false">
+    </script>
 
 
 
