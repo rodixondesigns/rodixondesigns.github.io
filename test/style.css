@@ -9,7 +9,9 @@ body {
 
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.bgimg-3,
+.bgimg-4,
+.bgimg-5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,6 +34,16 @@ body {
     min-height: 400px
 }
 
+.bgimg-4 {
+    background-image: url(kkra/hero.jpg);
+    min-height: 100%
+}
+
+.bgimg-5 {
+    background-image: url(kkra/parallax.jpg);
+    min-height: 500px
+}
+
 .ro-wide {
     letter-spacing: 10px
 }
@@ -43,7 +55,9 @@ body {
 @media only screen and (max-device-width:1024px) {
     .bgimg-1,
     .bgimg-2,
-    .bgimg-3 {
+    .bgimg-3
+    .bgimg-4,
+    .bgimg-5 {
         background-attachment: scroll
     }
 }
@@ -163,6 +177,11 @@ body {
 
 html {
     overflow-x: hidden
+}
+
+.kkra {
+  width: 50%;
+  height: auto;
 }
 
 .ro-image {
@@ -1430,6 +1449,10 @@ a {
     background-color: #ddffff!important
 }
 
+.ro-text-shadow {
+  text-shadow: 2px 2px 8px #efefef;
+}
+
 .ro-text-amber,
 .ro-hover-text-amber:hover {
     color: #ffc107!important
@@ -1457,7 +1480,7 @@ a {
 
 .ro-text-cyan,
 .ro-hover-text-cyan:hover {
-    color: #8C001A!important
+    color: #8C001A !important
 }
 
 .ro-text-blue-grey,
@@ -2511,6 +2534,11 @@ textarea {
     z-index: 2
 }
 
+.contact-flex img {
+  width: 100%;
+  height: auto;
+}
+
 .contact-item1 {
     position: relative;
     width: 50%;
@@ -2563,10 +2591,33 @@ textarea {
     padding: 2%
 }
 
+.contact-item4 {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  margin: 5%;
+  padding: 0 5%;
+}
+
+.contact-item5 {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 5%;
+}
+
 @media (max-width:600px) {
     .contact-flex {
         flex-wrap: wrap
     }
+
+    .contact-flex img {
+      width: 50%;
+      height: auto;
+    }
+
     .contact-item1 {
         width: 100%;
         height: auto
@@ -2575,7 +2626,9 @@ textarea {
         width: 100%;
         height: auto
     }
-    .contact-item3 {
+    .contact-item3,
+    .contact-item4,
+    .contact-item5 {
         width: 100%;
         height: auto
     }
