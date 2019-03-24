@@ -60,6 +60,10 @@ body {
     .bgimg-5 {
         background-attachment: scroll
     }
+
+    .bgimg-4 {
+        background-image: url(kkra/mobile_hero.jpg);
+      }
 }
 
 h1 {
@@ -609,6 +613,22 @@ a {
     .ro-col.l12 {
         width: 99.99999%
     }
+}
+
+.ro-section2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.ro-thirty {
+  float: left;
+  width: 30%;
+}
+
+.ro-seventy {
+  float: left;
+  width: 70%;
 }
 
 .ro-content {
@@ -1211,7 +1231,7 @@ a {
 }
 
 .ro-padding-large {
-    padding: 12px 24px!important
+    padding: 24px 48px!important
 }
 
 .ro-padding-16 {
@@ -2051,6 +2071,29 @@ textarea {
     width: 100%;
     margin: 0
 }
+
+#adventures {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    z-index: 2;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-image: url(kkra/mission.jpg);
+}
+
+#adventures img {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 0
+}
+
 
 .top-right {
     position: absolute;
