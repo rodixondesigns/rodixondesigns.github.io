@@ -644,3 +644,16 @@ a:hover {
     -ms-border-radius: 50%;
     border-radius: 50%;
   }
+
+  .white-icon {
+      padding: 4px;
+      text-decoration: none;
+      background-color: #ffffff;
+      color: #334D5C;
+      display: inline-block;
+      position: relative;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+    }
