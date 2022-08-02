@@ -91,6 +91,12 @@ a:hover {
     line-height: 0.5em!important
 }
 
+.padded {
+    line-height: 2em!important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
 .uk-container-small {
     max-width: 1020px
 }
