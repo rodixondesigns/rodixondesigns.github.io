@@ -335,6 +335,15 @@ a:hover {
     display: block;
 }
 
+.about-photo {
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin-left: 40% !important;
+    margin-bottom: 30px;
+    display: block;
+}
+
 .work-photo{
     width: 20%;
     height: auto;
