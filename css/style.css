@@ -189,6 +189,12 @@ a:hover {
     color: #334D5C
 }
 
+.white-50 {
+    background: rgba(255, 255, 255, 0.5);
+    color: #334D5C !important;
+
+}
+
 .border-dk-blue {
     border-color: 1px solid #334D5C!important
 }
@@ -672,3 +678,41 @@ a:hover {
       -ms-border-radius: 50%;
       border-radius: 50%;
     }
+    value-prop-icon {
+            width: 60px;
+            height: 60px;
+            background: #45B29D;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .case-study-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-left: 5px solid #45B29D;
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-highlight {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #45B29D;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .leadership-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #45B29D;
+            margin-bottom: 20px;
+        }
